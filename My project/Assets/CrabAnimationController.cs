@@ -29,6 +29,11 @@ namespace KinematicCharacterController.Walkthrough.BasicMovement
                 tmp = true;
                 animator.SetTrigger("Fight_Idle_1");
             }
+
+            if (Input.GetMouseButtonDown(0))
+            {
+               animator.SetTrigger("Attack_1");
+            }
         }
     }
 }
