@@ -48,8 +48,6 @@ namespace KinematicCharacterController.Walkthrough.BasicMovement
         /// </summary>
         public void SetInputs(ref PlayerCharacterInputs inputs)
         {
-            Debug.Log(inputs.MoveAxisForward);
-            Debug.Log(inputs.MoveAxisRight);
             // Clamp input
             Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, inputs.MoveAxisForward), 1f);
 
@@ -136,7 +134,7 @@ namespace KinematicCharacterController.Walkthrough.BasicMovement
                 // Drag
                 currentVelocity *= (1f / (1f + (Drag * deltaTime)));
 
-                if(currentVelocity.x > 0 || currentVelocity.z > 0) {
+                if(currentVelocity.x != 0 || currentVelocity.z != 0) {
                     moving = true;
                 } else {
                     moving = false;
