@@ -71,8 +71,8 @@ namespace RPGCharacterAnims
 			inputMouseScrollDown = Mouse.current.scroll.ReadValue().y < 0f;
 			#else
 			inputFollow = Input.GetKeyDown(KeyCode.F);
-			inputRotateL = Input.GetKey(KeyCode.Q);
-			inputRotateR = Input.GetKey(KeyCode.E);
+			//inputRotateL = Input.GetKey(KeyCode.p);
+			//inputRotateR = Input.GetKey(KeyCode.E);
 			inputMouseScrollUp = Input.mouseScrollDelta.y == 1;
 			inputMouseScrollDown = Input.mouseScrollDelta.y == -1;
 			#endif

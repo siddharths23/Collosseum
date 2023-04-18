@@ -142,11 +142,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AddRunSpeed: 1
   AddWalkSpeed: 1
---- !u!4 &713378293 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4000013314187654, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
-  m_PrefabInstance: {fileID: 1276868298}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1276868298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -158,21 +153,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: wizard_weapon_legacy DEMO
       objectReference: {fileID: 0}
+    - target: {fileID: 4000011058617650, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013314187654, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000013314187654, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000013314187654, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000013314187654, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000013314187654, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -213,6 +212,22 @@ PrefabInstance:
     - target: {fileID: 4000013314187654, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012892272582, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012892272582, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012892272582, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012892272582, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a967089208f523246bbb4911dd5cde5c, type: 3}
@@ -325,6 +340,7 @@ GameObject:
   - component: {fileID: 1546354108}
   - component: {fileID: 1546354107}
   - component: {fileID: 1546354106}
+  - component: {fileID: 1546354109}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -391,13 +407,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546354105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.20807452, y: 2.5, z: -23.112791}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalPosition: {x: 0.041614905, y: 0.5, z: -5.377442}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 713378293}
-  m_RootOrder: 6
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1546354109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546354105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ba4849f4c890f44947978c76596fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTarget: {fileID: 713378290}
+  cameraTargetOffsetY: 0
+  rotateSpeed: 2
+  height: 2
+  distance: 5
+  zoomAmount: 0.1
+  smoothing: 2
 --- !u!1 &1760820845
 GameObject:
   m_ObjectHideFlags: 0

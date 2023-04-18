@@ -11,12 +11,13 @@ namespace RPGCharacterAnims
     {
         private RPGCharacterController rpgCharacterController;
         private RPGCharacterWeaponController rpgCharacterWeaponController;
+        public FMODUnity.EventReference MyEvent;
         // Start is called before the first frame update
         void Start()
         {
             rpgCharacterController = GetComponent<RPGCharacterController>();
             rpgCharacterWeaponController = GetComponent<RPGCharacterWeaponController>();
-
+            
             var switchWeaponContext = new SwitchWeaponContext();
             // TwoHanded weapon.
 			foreach (var weapon in WeaponGroupings.TwoHandedWeapons) {
@@ -36,6 +37,11 @@ namespace RPGCharacterAnims
 
             rpgCharacterController.TryStartAction(HandlerTypes.SwitchWeapon, switchWeaponContext);
         }
+    
+
+     
+
+        
 
         // Update is called once per frame
         void Update()
@@ -43,9 +49,11 @@ namespace RPGCharacterAnims
             if (Input.GetMouseButtonDown(0))
             {
                Attacks();
+                FMODUnity.RuntimeManager.PlayOneShot(MyEvent, GetComponent<Transform>().position);
+
             }
         }
-
+        
         private void Attacks()
         {
             // Check if Attack Action exists.
