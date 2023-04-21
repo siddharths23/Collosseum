@@ -17,6 +17,14 @@ public class Dummy : MonoBehaviour
         currentHealth = maxHealth;
     }
 
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            TakeDamage(10);
+        }
+    }
+
     void OnCollisionEnter (Collision collision) {
         Debug.Log("collided");
         if (collision.gameObject.tag == "Weapon") {

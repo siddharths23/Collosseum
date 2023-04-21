@@ -293,7 +293,6 @@ MonoBehaviour:
   cameraTarget: {fileID: 4807378906164107923}
   cameraTargetOffsetY: 0
   rotateSpeed: 2
-<<<<<<< HEAD
   height: 3
   distance: 5
   zoomAmount: 0.1
@@ -363,12 +362,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4f8c3d0755c7da94daffd8fce30aaccc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a7983dd8519c7744abfe294b3b1e794, type: 3}
-=======
-  height: 4
-  distance: 4
-  zoomAmount: 0.1
-  smoothing: 2
->>>>>>> e3ffc64f4b0ed89291a5a01cfd079a7ec8e3971a
 --- !u!114 &752796658
 MonoBehaviour:
   m_ObjectHideFlags: 0
