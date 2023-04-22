@@ -4647,6 +4647,7 @@ GameObject:
   - component: {fileID: 2475478958505548518}
   - component: {fileID: 2191618422868023594}
   - component: {fileID: 6421686034649309441}
+  - component: {fileID: -6816319055809356488}
   m_Layer: 0
   m_Name: CrabBoss
   m_TagString: Untagged
@@ -4704,7 +4705,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da7f50c78ae598144ae3e9ab5aee3c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
   animator: {fileID: 2330797971957879887}
 --- !u!114 &-4993384806388577229
 MonoBehaviour:
@@ -4788,6 +4788,7 @@ MonoBehaviour:
   syncInterval: 0
   speed: 100
   rigidbody: {fileID: 2475478958505548518}
+  animator: {fileID: 2330797971957879887}
 --- !u!136 &6421686034649309441
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4802,6 +4803,23 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.3, z: 0}
+--- !u!114 &-6816319055809356488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374688962146441844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6f3bf89aa97405989c802ba270f815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 1
+  syncMode: 0
+  syncInterval: 0
+  clientAuthority: 1
+  animator: {fileID: 2330797971957879887}
 --- !u!1 &8172281088756679531
 GameObject:
   m_ObjectHideFlags: 0
