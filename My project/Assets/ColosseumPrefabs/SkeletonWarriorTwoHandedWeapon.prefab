@@ -143,6 +143,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c78a47f60bcba3449258f2f1232e9a5, type: 3}
+--- !u!95 &2603401412660417491 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2241879869581457609, guid: 8c78a47f60bcba3449258f2f1232e9a5, type: 3}
+  m_PrefabInstance: {fileID: 4268816612894681882}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3039733775601090166 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1230238973774402924, guid: 8c78a47f60bcba3449258f2f1232e9a5, type: 3}
@@ -158,6 +163,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4807378906527954953, guid: 8c78a47f60bcba3449258f2f1232e9a5, type: 3}
   m_PrefabInstance: {fileID: 4268816612894681882}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &-8388955679551196045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8758058383230259987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6f3bf89aa97405989c802ba270f815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 1
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 1
+  animator: {fileID: 2603401412660417491}
 --- !u!114 &-7239686555989417034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  syncDirection: 0
+  syncDirection: 1
   syncMode: 0
   syncInterval: 0
   target: {fileID: 8268907012824369577}
@@ -214,11 +236,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5958cd024b2eaad48be530c6c18db3df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugWalkthrough: 1
-  debugSwitchWeaponContext: 1
-  debugDoWeaponSwitch: 1
-  debugWeaponVisibility: 1
-  debugSetAnimator: 1
+  debugWalkthrough: 0
+  debugSwitchWeaponContext: 0
+  debugDoWeaponSwitch: 0
+  debugWeaponVisibility: 0
+  debugSetAnimator: 0
   twoHandSword: {fileID: 26403613411566834}
 --- !u!114 &752796660
 MonoBehaviour:
@@ -317,6 +339,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286355fffdee58f47a78a80d20810f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  rpgCharacterController: {fileID: 0}
+  rpgCharacterWeaponController: {fileID: 0}
   MyEvent:
     Guid:
       Data1: -1281567317

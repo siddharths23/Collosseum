@@ -4705,7 +4705,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da7f50c78ae598144ae3e9ab5aee3c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 2330797971957879887}
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  animator: {fileID: -6816319055809356488}
 --- !u!114 &-4993384806388577229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4786,8 +4789,7 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  speed: 100
-  rigidbody: {fileID: 2475478958505548518}
+  speed: 600
   animator: {fileID: 2330797971957879887}
 --- !u!136 &6421686034649309441
 CapsuleCollider:
@@ -4817,7 +4819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncDirection: 1
   syncMode: 0
-  syncInterval: 0
+  syncInterval: 0.1
   clientAuthority: 1
   animator: {fileID: 2330797971957879887}
 --- !u!1 &8172281088756679531

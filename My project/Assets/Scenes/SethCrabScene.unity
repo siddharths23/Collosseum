@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OrbitCamera: {fileID: 0}
   CameraFollowPoint: {fileID: 5794526362974164142}
-  Character: {fileID: 5850578552376480917}
+  Character: {fileID: 0}
 --- !u!4 &1228585504
 Transform:
   m_ObjectHideFlags: 0
@@ -1347,6 +1347,7 @@ GameObject:
   - component: {fileID: 1942413104}
   - component: {fileID: 1942413103}
   - component: {fileID: 1942413102}
+  - component: {fileID: 1942413105}
   m_Layer: 11
   m_Name: Canvas
   m_TagString: Untagged
@@ -1436,6 +1437,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1942413105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942413100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0b42e0c8779104198bb04fa28f9d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 195803515}
 --- !u!1 &1978866359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,17 +1569,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 217452159889394473, guid: e22950b117aaa2646a69db3bbdea0233, type: 3}
   m_PrefabInstance: {fileID: 8172281088977879259}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5850578552376480917 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2330797971957879886, guid: e22950b117aaa2646a69db3bbdea0233, type: 3}
-  m_PrefabInstance: {fileID: 8172281088977879259}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 64676008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31e9f34d26f4f374f97ce0f3ef08b1a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5850578552376480925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1578,6 +1581,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9084c50a4381c45aac36a40b1e8255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  speed: 30
+  animator: {fileID: 0}
 --- !u!1001 &8172281088977879259
 PrefabInstance:
   m_ObjectHideFlags: 0

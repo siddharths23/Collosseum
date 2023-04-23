@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8400717728761075319
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2603401412660417491, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e0fef0e5463c6244b90a5e47789f203a, type: 2}
+    - target: {fileID: 3750652997903541099, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: _assetId
+      value: 31331060
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268907012824369577, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758058383230259987, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+      propertyPath: m_Name
+      value: SkeletonWarriorTwoHandedWeaponSimple
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 752796662, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+    - {fileID: 752796661, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+    - {fileID: 752796660, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+    - {fileID: 752796659, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+    - {fileID: 752796658, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+    - {fileID: 5331396684363481131, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+--- !u!1 &945623917936182628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8758058383230259987, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+  m_PrefabInstance: {fileID: 8400717728761075319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &-3570314289038737310
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945623917936182628}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 36
+  m_CollisionDetection: 0
+--- !u!136 &4259353178961893288
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945623917936182628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.1
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &4779144231243191552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945623917936182628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa484179cf46eb649a22320af5ce1ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  animator: {fileID: 9151641008423543300}
+--- !u!114 &7259302540127873104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945623917936182628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e67a99bb8ed1b9478edeea180f47fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  speed: 600
+  animator: {fileID: 5815408848936011172}
+--- !u!95 &5815408848936011172 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2603401412660417491, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+  m_PrefabInstance: {fileID: 8400717728761075319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9151641008423543300 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -8388955679551196045, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
+  m_PrefabInstance: {fileID: 8400717728761075319}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945623917936182628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6f3bf89aa97405989c802ba270f815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

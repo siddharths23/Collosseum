@@ -17,15 +17,17 @@ public class NetworkManagerHW4 : NetworkManager
     
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
+        Debug.Log("Player " + numPlayers + " joined.");
         // add player at correct spawn position
         Transform start = numPlayers == 0 ? bossSpawn : playerSpawn;
-        playerPrefab = numPlayers == 0 ? spawnPrefabs.Find(prefab => prefab.name == "CrabBoss") : spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeapon");
+        playerPrefab = numPlayers == 0 ? spawnPrefabs.Find(prefab => prefab.name == "CrabBoss") : spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
         GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
         NetworkServer.AddPlayerForConnection(conn, player);
     }
 
     public override void OnServerDisconnect(NetworkConnectionToClient conn)
     {
+        Debug.Log("Player Left.");
         // call base functionality (actually destroys the player)
         base.OnServerDisconnect(conn);
     }

@@ -6,15 +6,20 @@ using Mirror;
 public class CrabMovementController : NetworkBehaviour
 {
     public float speed = 30;
-    public Rigidbody rigidbody;
+    Rigidbody rigidbody;
     public Animator animator;
+
+    void Start()
+    {
+        rigidbody = GetComponent<Rigidbody>();
+    }
 
     // Update is called once per frame
     void FixedUpdate()
-        {
-            if (isLocalPlayer) {
-                rigidbody.velocity = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")) * speed * Time.fixedDeltaTime;
-                animator.SetFloat("Speed", Mathf.Abs(rigidbody.velocity.magnitude));
-            }
+    {
+        if (isLocalPlayer) {
+            rigidbody.velocity = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")) * speed * Time.fixedDeltaTime;
+            animator.SetFloat("Speed", Mathf.Abs(rigidbody.velocity.magnitude));
         }
+    }
 }
