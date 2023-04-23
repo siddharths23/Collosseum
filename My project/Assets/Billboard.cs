@@ -9,6 +9,6 @@ public class Billboard : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.LookAt(transform.position + cam.position);
+        transform.LookAt(transform.position + cam.forward);
     }
 }

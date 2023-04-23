@@ -25,7 +25,7 @@ public class Dummy : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter (Collision collision) {
+    void OnCollisionEnter(Collision collision) {
         Debug.Log("collided");
         if (collision.gameObject.tag == "Weapon") {
             TakeDamage(10);
