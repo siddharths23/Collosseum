@@ -1,5 +1,6 @@
 using UnityEngine;
 using Mirror;
+using System.Collections.Generic;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-manager
@@ -15,6 +16,8 @@ public class NetworkManagerHW4 : NetworkManager
     public Transform bossSpawn;
     public Transform playerSpawn;
     
+    private Dictionary<string, int> playerHealth = new Dictionary<string, int>();
+
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
         Debug.Log("Player " + numPlayers + " joined.");
@@ -31,5 +34,7 @@ public class NetworkManagerHW4 : NetworkManager
         // call base functionality (actually destroys the player)
         base.OnServerDisconnect(conn);
     }
+
+    
 }
 
