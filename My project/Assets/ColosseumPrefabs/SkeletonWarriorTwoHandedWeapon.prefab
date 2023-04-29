@@ -351,3 +351,15 @@ MonoBehaviour:
       Data3: 718653328
       Data4: -1828429913
     Path: event:/CLM_SFX_Magic_Blast
+--- !u!114 &4582394086568528025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8758058383230259987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab8a1c18aee20e4e8390e3aa603d624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

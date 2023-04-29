@@ -26,6 +26,8 @@ public class NetworkManagerHW4 : NetworkManager
         playerPrefab = numPlayers == 0 ? spawnPrefabs.Find(prefab => prefab.name == "CrabBoss") : spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
         GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
         NetworkServer.AddPlayerForConnection(conn, player);
+        //Should instantiate health a different way
+        playerHealth[player.name] = 100;
     }
 
     public override void OnServerDisconnect(NetworkConnectionToClient conn)
@@ -35,6 +37,9 @@ public class NetworkManagerHW4 : NetworkManager
         base.OnServerDisconnect(conn);
     }
 
-    
+    public void TakeDamage(string name, int damage) {
+        playerHealth[name] = playerHealth[name] - damage;
+        Debug.Log("Player " + name + "now has " + playerHealth[name] + "health.");
+    }
 }
 

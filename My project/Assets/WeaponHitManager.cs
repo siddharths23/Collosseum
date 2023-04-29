@@ -15,10 +15,11 @@ public class WeaponHitManager : MonoBehaviour
     
 
     void OnCollisionEnter(Collision collision) {
-        Debug.Log("collided");
+        // Debug.Log("collided");
         if (collision.gameObject.layer == 11) {
             //Make the target take damage
-            // collision.gameObject.TakeDamage(spikeDamage);
+            collision.gameObject.GetComponent<HitboxManager>().TakeDamage(weaponDamage);
+            Debug.Log("target: " + collision.gameObject.name + " should take " + weaponDamage + " damage");  
         }
         
     }

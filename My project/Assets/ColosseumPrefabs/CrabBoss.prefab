@@ -4713,6 +4713,7 @@ GameObject:
   - component: {fileID: 2191618422868023594}
   - component: {fileID: 6421686034649309441}
   - component: {fileID: -6816319055809356488}
+  - component: {fileID: 145691588364597793}
   m_Layer: 0
   m_Name: CrabBoss
   m_TagString: Untagged
@@ -4887,6 +4888,21 @@ MonoBehaviour:
   syncInterval: 0.1
   clientAuthority: 1
   animator: {fileID: 2330797971957879887}
+--- !u!114 &145691588364597793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374688962146441844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab8a1c18aee20e4e8390e3aa603d624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
 --- !u!1 &7967409316758506085
 GameObject:
   m_ObjectHideFlags: 0
@@ -5396,8 +5412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e8355d2f4667994380bcd2ca91dd82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spikeDamage: 0
-  hitbox: {fileID: 8172281089297859562}
+  weaponDamage: 10
 --- !u!1 &8172281089355405104
 GameObject:
   m_ObjectHideFlags: 0
@@ -5783,8 +5798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e8355d2f4667994380bcd2ca91dd82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spikeDamage: 0
-  hitbox: {fileID: 8172281089798116747}
+  weaponDamage: 10
 --- !u!1 &8172281089815153603
 GameObject:
   m_ObjectHideFlags: 0
