@@ -28,6 +28,8 @@ public class NetworkManagerHW4 : NetworkManager
         NetworkServer.AddPlayerForConnection(conn, player);
         //Should instantiate health a different way
         playerHealth[player.name] = 100;
+
+        
     }
 
     public override void OnServerDisconnect(NetworkConnectionToClient conn)

@@ -13,8 +13,18 @@ public class HitboxManager : NetworkBehaviour
         manager = GameObject.Find("NetworkManager").GetComponent<NetworkManagerHW4>();
     }
 
-    [Command]
-    public void TakeDamage(int damage) {
-        manager.TakeDamage(this.name, damage);
+    void onTriggerEnter(Collider collision) {
+        Debug.Log("triggered");
+
+        if (collision.gameObject.layer == 10) {
+            //Make the target take damage
+            TakeDamage(this.transform.root.name, 10);
+            Debug.Log("target: " + this.transform.root.name + " should take " + 10 + " damage");  
+        }
+    }
+
+    [Command(requiresAuthority = false)]
+    public void TakeDamage(string name, int damage) {
+        manager.TakeDamage(name, damage);
     }
 }
