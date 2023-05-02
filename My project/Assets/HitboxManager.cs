@@ -16,11 +16,11 @@ public class HitboxManager : NetworkBehaviour
     void onTriggerEnter(Collider collision) {
         Debug.Log("triggered");
 
-        if (collision.gameObject.layer == 10) {
+        // if (collision.gameObject.layer == 10) {
             //Make the target take damage
             TakeDamage(this.transform.root.name, 10);
             Debug.Log("target: " + this.transform.root.name + " should take " + 10 + " damage");  
-        }
+        // }
     }
 
     [Command(requiresAuthority = false)]

@@ -22,14 +22,18 @@ public class NetworkManagerHW4 : NetworkManager
     {
         Debug.Log("Player " + numPlayers + " joined.");
         // add player at correct spawn position
-        Transform start = numPlayers == 0 ? bossSpawn : playerSpawn;
-        playerPrefab = numPlayers == 0 ? spawnPrefabs.Find(prefab => prefab.name == "CrabBoss") : spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
+        // Transform start = numPlayers == 0 ? bossSpawn : playerSpawn;
+        // playerPrefab = numPlayers == 0 ? spawnPrefabs.Find(prefab => prefab.name == "CrabBoss") : spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
+
+        Transform start = numPlayers == 0 ? playerSpawn : bossSpawn;
+        playerPrefab = numPlayers == 0 ? spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple") : spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
+
         GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
         NetworkServer.AddPlayerForConnection(conn, player);
         //Should instantiate health a different way
         playerHealth[player.name] = 100;
 
-        
+
     }
 
     public override void OnServerDisconnect(NetworkConnectionToClient conn)
@@ -40,8 +44,12 @@ public class NetworkManagerHW4 : NetworkManager
     }
 
     public void TakeDamage(string name, int damage) {
+        //update the health
         playerHealth[name] = playerHealth[name] - damage;
         Debug.Log("Player " + name + "now has " + playerHealth[name] + "health.");
+
+        //send new health to all clients
+        
     }
 }
 

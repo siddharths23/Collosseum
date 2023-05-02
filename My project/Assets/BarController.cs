@@ -2,11 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Mirror;
 
 public class BarController : MonoBehaviour
 {
     public Slider healthBar;
     public Slider staminaBar;
+
+    public NetworkManagerHW4 manager;
+
+    void Start()
+    {
+        manager = GameObject.Find("NetworkManager").GetComponent<NetworkManagerHW4>();
+    }
 
     public void setMaxHealth(int health) {
         healthBar.maxValue = health;
