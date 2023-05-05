@@ -5,26 +5,30 @@ using Mirror;
 
 public class HitboxManager : NetworkBehaviour
 {
-    public NetworkManagerHW4 manager;
+    public Collider[] hitboxs;
     
-    // Start is called before the first frame update
-    void Start()
+    public IEnumerator gotHit()
     {
-        manager = GameObject.Find("NetworkManager").GetComponent<NetworkManagerHW4>();
+        disableHitboxs();
+        yield return new WaitForSeconds(1);
+        enableHitboxs();
+        // return;
     }
 
-    void onTriggerEnter(Collider collision) {
-        Debug.Log("triggered");
-
-        // if (collision.gameObject.layer == 10) {
-            //Make the target take damage
-            TakeDamage(this.transform.root.name, 10);
-            Debug.Log("target: " + this.transform.root.name + " should take " + 10 + " damage");  
-        // }
+    void disableHitboxs()
+    {
+        foreach (Collider hitbox in hitboxs)
+        {
+            hitbox.enabled = false;
+        }
     }
 
-    [Command(requiresAuthority = false)]
-    public void TakeDamage(string name, int damage) {
-        manager.TakeDamage(name, damage);
+    void enableHitboxs()
+    {
+        foreach (Collider hitbox in hitboxs)
+        {
+            hitbox.enabled = true;
+        }
     }
+    
 }
