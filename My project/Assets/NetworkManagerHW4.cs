@@ -17,6 +17,7 @@ public class NetworkManagerHW4 : NetworkManager
     public Transform playerSpawn;
     
     private Dictionary<string, int> playerHealth = new Dictionary<string, int>();
+    private Dictionary<string, BarController> playerBar = new Dictionary<string, BarController>();
 
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
@@ -32,6 +33,7 @@ public class NetworkManagerHW4 : NetworkManager
         NetworkServer.AddPlayerForConnection(conn, player);
         //Should instantiate health a different way
         playerHealth[player.name] = 100;
+        playerBar[player.name] = player.GetComponentInChildren<BarController>();
 
 
     }
@@ -49,7 +51,7 @@ public class NetworkManagerHW4 : NetworkManager
         Debug.Log("Player " + name + "now has " + playerHealth[name] + "health.");
 
         //send new health to all clients
-        
+        playerBar[name].setHealth(playerHealth[name]);
     }
 }
 
