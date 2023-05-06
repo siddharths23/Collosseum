@@ -625,6 +625,18 @@ MonoBehaviour:
   hitbox:
   - {fileID: 1326700915874528245}
   manager: {fileID: 0}
+--- !u!114 &5224853877509705443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945623917936182628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60174c770bbf88441b15e0d89c278236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &5815408848936011172 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2603401412660417491, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
