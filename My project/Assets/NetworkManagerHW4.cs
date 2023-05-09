@@ -15,6 +15,8 @@ public class NetworkManagerHW4 : NetworkManager
 {
     public Transform bossSpawn;
     public Transform playerSpawn;
+    public Transform mageSpawn;
+    public Transform shieldSpawn;
     
     private Dictionary<string, int> playerHealth = new Dictionary<string, int>();
     private Dictionary<string, PlayerManagement> playerBar = new Dictionary<string, PlayerManagement>();
@@ -26,8 +28,22 @@ public class NetworkManagerHW4 : NetworkManager
         // Transform start = numPlayers == 0 ? bossSpawn : playerSpawn;
         // playerPrefab = numPlayers == 0 ? spawnPrefabs.Find(prefab => prefab.name == "CrabBoss") : spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
 
-        Transform start = numPlayers == 0 ? playerSpawn : bossSpawn;
-        playerPrefab = numPlayers == 0 ? spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple") : spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
+        Transform start = bossSpawn;
+        GameObject playerPrefab;
+
+        if (numPlayers == 0)
+        {
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
+        }
+        else if (numPlayers == 1)
+        {
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "mage_Simple");
+        }
+        else
+        {
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarrior");
+        }
+
 
         GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
         NetworkServer.AddPlayerForConnection(conn, player);

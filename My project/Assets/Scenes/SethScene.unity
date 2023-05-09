@@ -389,7 +389,7 @@ MonoBehaviour:
   onlineScene: 
   transport: {fileID: 818665583}
   networkAddress: localhost
-  maxConnections: 2
+  maxConnections: 5
   authenticator: {fileID: 0}
   playerPrefab: {fileID: 4807378906527954953, guid: 8c78a47f60bcba3449258f2f1232e9a5, type: 3}
   autoCreatePlayer: 1
@@ -397,6 +397,8 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 6374688962146441844, guid: e22950b117aaa2646a69db3bbdea0233, type: 3}
   - {fileID: 945623917936182628, guid: bf0523f3870e5f24b9ea3461b05ccb80, type: 3}
+  - {fileID: 7143694682562351869, guid: dc55abfca9112d94393693af1a027b95, type: 3}
+  - {fileID: 2301148570075617530, guid: 2af5e1c19cb530b4d9a49f63a95ddda9, type: 3}
   snapshotSettings:
     bufferTimeMultiplier: 2
     catchupNegativeThreshold: -1
@@ -410,6 +412,8 @@ MonoBehaviour:
   timeInterpolationGui: 0
   bossSpawn: {fileID: 109007257}
   playerSpawn: {fileID: 98580547}
+  mageSpawn: {fileID: 7146711281441342561, guid: dc55abfca9112d94393693af1a027b95, type: 3}
+  shieldSpawn: {fileID: 1487457547419976256, guid: 2af5e1c19cb530b4d9a49f63a95ddda9, type: 3}
 --- !u!114 &818665583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +589,7 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  manager: {fileID: 0}
+  hitboxs: []
 --- !u!114 &1161946198
 MonoBehaviour:
   m_ObjectHideFlags: 0
