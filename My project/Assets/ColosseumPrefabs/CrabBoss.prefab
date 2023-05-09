@@ -5020,6 +5020,7 @@ GameObject:
   - component: {fileID: 6421686034649309441}
   - component: {fileID: -6816319055809356488}
   - component: {fileID: 3417314773809822229}
+  - component: {fileID: 1047910119242742695}
   m_Layer: 0
   m_Name: CrabBoss
   m_TagString: Untagged
@@ -5232,6 +5233,22 @@ MonoBehaviour:
   - {fileID: 8172281090605850436}
   - {fileID: 8172281089361006488}
   - {fileID: 8172281090120257760}
+--- !u!114 &1047910119242742695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374688962146441844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60174c770bbf88441b15e0d89c278236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  health: 100
 --- !u!1 &6987389631274617620
 GameObject:
   m_ObjectHideFlags: 0

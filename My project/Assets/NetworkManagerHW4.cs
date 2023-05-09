@@ -28,20 +28,33 @@ public class NetworkManagerHW4 : NetworkManager
         // Transform start = numPlayers == 0 ? bossSpawn : playerSpawn;
         // playerPrefab = numPlayers == 0 ? spawnPrefabs.Find(prefab => prefab.name == "CrabBoss") : spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
 
-        Transform start = bossSpawn;
+        Transform start;
         GameObject playerPrefab;
 
         if (numPlayers == 0)
         {
-            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
+            start = bossSpawn;
         }
         else if (numPlayers == 1)
         {
-            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "mage_Simple");
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
+            start = playerSpawn;
         }
-        else
+        else if (numPlayers == 2)
+        {
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "mage_Simple");
+            start = mageSpawn;
+        }
+        else if (numPlayers == 3)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarrior");
+            start = shieldSpawn;
+        }
+        else 
+        {
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
+            start = bossSpawn;
         }
 
 
@@ -49,7 +62,8 @@ public class NetworkManagerHW4 : NetworkManager
         NetworkServer.AddPlayerForConnection(conn, player);
         //Should instantiate health a different way
         playerHealth[player.name] = 100;
-        playerBar[player.name] = player.GetComponentInChildren<PlayerManagement>();
+        playerBar[player.name] = player.GetComponent<PlayerManagement>();
+        // playerBar[name].health = 99;
 
 
     }

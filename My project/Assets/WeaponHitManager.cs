@@ -41,6 +41,6 @@ public class WeaponHitManager : NetworkBehaviour
 
     [Command(requiresAuthority = false)]
     public void TakeDamage(string name, int damage) {
-        manager.TakeDamage(this.name, damage);
+        manager.TakeDamage(name, damage);
     }
 }
