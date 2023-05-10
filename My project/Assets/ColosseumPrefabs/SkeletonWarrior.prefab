@@ -977,6 +977,8 @@ MonoBehaviour:
   - Attack_1
   - Attack_2
   - Attack_3
+  weapons: {fileID: 7883676820654365627}
+  attackRate: 1
 --- !u!114 &7277832697647499959
 MonoBehaviour:
   m_ObjectHideFlags: 0

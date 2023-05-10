@@ -5217,6 +5217,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   health: 100
+  isDead: 0
 --- !u!114 &7627637231216808768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5239,6 +5240,8 @@ MonoBehaviour:
   - Attack_3
   - Attack_4
   - Attack_5
+  weapons: {fileID: 3733968022573363092}
+  attackRate: 1
 --- !u!114 &3733968022573363092
 MonoBehaviour:
   m_ObjectHideFlags: 0

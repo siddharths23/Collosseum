@@ -688,6 +688,8 @@ MonoBehaviour:
   animator: {fileID: 7536911055047303805}
   attackNames:
   - Attack_1
+  weapons: {fileID: -7121082792874711678}
+  attackRate: 1
 --- !u!1 &7143694686245719647 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013805349816, guid: a967089208f523246bbb4911dd5cde5c, type: 3}

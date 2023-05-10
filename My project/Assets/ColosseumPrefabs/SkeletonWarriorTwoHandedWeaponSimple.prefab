@@ -601,6 +601,8 @@ MonoBehaviour:
   - Attack_9
   - Attack_10
   - Attack_11
+  weapons: {fileID: 8298137710557885499}
+  attackRate: 1
 --- !u!114 &5224853877509705443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +619,24 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   health: 100
+  isDead: 0
+--- !u!114 &7471846578676809256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945623917936182628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a597cb0d06121cb47aa295056d3f4586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  speed: 600
+  animator: {fileID: 5815408848936011172}
 --- !u!114 &8298137710557885499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,23 +656,6 @@ MonoBehaviour:
   hitbox:
   - {fileID: 1326700915874528245}
   manager: {fileID: 0}
---- !u!114 &7471846578676809256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945623917936182628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a597cb0d06121cb47aa295056d3f4586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  speed: 600
-  animator: {fileID: 5815408848936011172}
 --- !u!95 &5815408848936011172 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2603401412660417491, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}
