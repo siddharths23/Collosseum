@@ -5012,15 +5012,16 @@ GameObject:
   m_Component:
   - component: {fileID: 217452159889394473}
   - component: {fileID: 2330797971957879887}
-  - component: {fileID: 2330797971957879885}
   - component: {fileID: -4993384806388577229}
   - component: {fileID: -4766724451651672706}
-  - component: {fileID: 2475478958505548518}
-  - component: {fileID: 2191618422868023594}
-  - component: {fileID: 6421686034649309441}
   - component: {fileID: -6816319055809356488}
+  - component: {fileID: 2475478958505548518}
+  - component: {fileID: 6421686034649309441}
   - component: {fileID: 3417314773809822229}
   - component: {fileID: 1047910119242742695}
+  - component: {fileID: 7627637231216808768}
+  - component: {fileID: 3733968022573363092}
+  - component: {fileID: 2765755276186721725}
   m_Layer: 0
   m_Name: CrabBoss
   m_TagString: Untagged
@@ -5067,22 +5068,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &2330797971957879885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6374688962146441844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da7f50c78ae598144ae3e9ab5aee3c52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  animator: {fileID: -6816319055809356488}
 --- !u!114 &-4993384806388577229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5132,53 +5117,6 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   scaleSensitivity: 0.01
   timelineOffset: 0
---- !u!54 &2475478958505548518
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6374688962146441844}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
---- !u!114 &2191618422868023594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6374688962146441844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f9084c50a4381c45aac36a40b1e8255, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  speed: 600
-  animator: {fileID: 2330797971957879887}
---- !u!136 &6421686034649309441
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6374688962146441844}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!114 &-6816319055809356488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5196,6 +5134,36 @@ MonoBehaviour:
   syncInterval: 0.1
   clientAuthority: 1
   animator: {fileID: 2330797971957879887}
+--- !u!54 &2475478958505548518
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374688962146441844}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!136 &6421686034649309441
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374688962146441844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!114 &3417314773809822229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5249,6 +5217,65 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   health: 100
+--- !u!114 &7627637231216808768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374688962146441844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cdb64dd690b3d4085de69c8553907f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  animator: {fileID: -6816319055809356488}
+  attackNames:
+  - Attack_1
+  - Attack_2
+  - Attack_3
+  - Attack_4
+  - Attack_5
+--- !u!114 &3733968022573363092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374688962146441844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8355d2f4667994380bcd2ca91dd82b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  weaponDamage: 10
+  hitbox:
+  - {fileID: 8172281089297859560}
+  - {fileID: 8172281089798116745}
+  manager: {fileID: 0}
+--- !u!114 &2765755276186721725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374688962146441844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a597cb0d06121cb47aa295056d3f4586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  speed: 600
+  animator: {fileID: 2330797971957879887}
 --- !u!1 &6987389631274617620
 GameObject:
   m_ObjectHideFlags: 0
@@ -5848,6 +5875,7 @@ GameObject:
   - component: {fileID: 8172281089297859561}
   - component: {fileID: 8172281089297859560}
   - component: {fileID: 4483634822118563767}
+  - component: {fileID: 6970983467023412297}
   m_Layer: 10
   m_Name: LeftSpike
   m_TagString: Weapon
@@ -5899,6 +5927,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &6970983467023412297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8172281089297859562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b107f11e1349c14da4550055a29c620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8172281089355405104
 GameObject:
   m_ObjectHideFlags: 0
@@ -6285,6 +6325,7 @@ GameObject:
   - component: {fileID: 8172281089798116746}
   - component: {fileID: 8172281089798116745}
   - component: {fileID: 6475056655004155502}
+  - component: {fileID: 7657851854923412673}
   m_Layer: 10
   m_Name: RightSpike
   m_TagString: Weapon
@@ -6336,6 +6377,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &7657851854923412673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8172281089798116747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b107f11e1349c14da4550055a29c620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8172281089815153603
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,11 @@ public class CrabAnimationController : NetworkBehaviour
             animator.SetTrigger("Attack_1");
         }
     }
+
+    void Die()
+    {
+        animator.SetTrigger("Dead");
+    }
 }
 
 

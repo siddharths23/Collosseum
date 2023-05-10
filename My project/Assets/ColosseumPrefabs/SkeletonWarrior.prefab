@@ -776,9 +776,9 @@ GameObject:
   - component: {fileID: 2091368729944898207}
   - component: {fileID: 2091368729944898206}
   - component: {fileID: 7672305261830090843}
-  - component: {fileID: 1743480727620866505}
   - component: {fileID: 7883676820654365627}
-  - component: {fileID: 1481049419281991404}
+  - component: {fileID: 3617152943172172970}
+  - component: {fileID: 7277832697647499959}
   m_Layer: 11
   m_Name: SkeletonWarrior
   m_TagString: Untagged
@@ -936,23 +936,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   health: 100
---- !u!114 &1743480727620866505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2301148570075617530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e67a99bb8ed1b9478edeea180f47fc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  speed: 600
-  animator: {fileID: 4775132917268273210}
+  isDead: 0
 --- !u!114 &7883676820654365627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,7 +957,7 @@ MonoBehaviour:
   - {fileID: 8855520107132964075}
   - {fileID: 1849535593496627313}
   manager: {fileID: 0}
---- !u!114 &1481049419281991404
+--- !u!114 &3617152943172172970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -982,13 +966,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 2301148570075617530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 936137096167a6e4c934da0b96cfb7bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 60cdb64dd690b3d4085de69c8553907f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
   animator: {fileID: 2091368729944898205}
+  attackNames:
+  - Attack_1
+  - Attack_2
+  - Attack_3
+--- !u!114 &7277832697647499959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2301148570075617530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a597cb0d06121cb47aa295056d3f4586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  speed: 600
+  animator: {fileID: 4775132917268273210}
 --- !u!1 &2455081834859682322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1054,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2639887490181298484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.6039743}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1059,7 +1064,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.1918378, y: -1.4465103}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1256, y: 732}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3078293131586014833

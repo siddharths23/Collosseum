@@ -31,22 +31,22 @@ public class NetworkManagerHW4 : NetworkManager
         Transform start;
         GameObject playerPrefab;
 
-        if (numPlayers == 0)
+        if (numPlayers == 3)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
             start = bossSpawn;
         }
-        else if (numPlayers == 1)
+        else if (numPlayers == 2)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
             start = playerSpawn;
         }
-        else if (numPlayers == 2)
+        else if (numPlayers == 0)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "mage_Simple");
             start = mageSpawn;
         }
-        else if (numPlayers == 3)
+        else if (numPlayers == 1)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarrior");
             start = shieldSpawn;
@@ -82,6 +82,10 @@ public class NetworkManagerHW4 : NetworkManager
 
         //send new health to all clients
         playerBar[name].health = playerHealth[name];
+
+        if (playerHealth[name] < 1) {
+            playerBar[name].isDead = true;
+        }
     }
 
 }

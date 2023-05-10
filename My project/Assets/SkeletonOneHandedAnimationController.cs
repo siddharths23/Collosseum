@@ -18,5 +18,10 @@ public class SkeletonOneHandedAnimationController : NetworkBehaviour
             animator.SetTrigger(attackNames[Random.Range(0 , 3)]);
         }
     }
+
+    void Die()
+    {
+        animator.SetTrigger("Dead");
+    }
 }
 
