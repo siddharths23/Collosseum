@@ -7,10 +7,10 @@ public class HitboxManager : NetworkBehaviour
 {
     public Collider[] hitboxs;
     
-    public IEnumerator gotHit()
+    public IEnumerator invincibleForSeconds(float time)
     {
         disableHitboxs();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(time);
         enableHitboxs();
         // return;
     }

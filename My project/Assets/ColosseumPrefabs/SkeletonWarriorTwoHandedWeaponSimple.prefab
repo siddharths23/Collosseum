@@ -589,6 +589,8 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   animator: {fileID: 9151641008423543300}
+  hitboxs: {fileID: 5880544879678001177}
+  canRoll: 1
   attackNames:
   - Attack_1
   - Attack_2
@@ -656,6 +658,23 @@ MonoBehaviour:
   hitbox:
   - {fileID: 1326700915874528245}
   manager: {fileID: 0}
+--- !u!114 &5880544879678001177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945623917936182628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab8a1c18aee20e4e8390e3aa603d624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  hitboxs:
+  - {fileID: 4259353178961893288}
 --- !u!95 &5815408848936011172 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2603401412660417491, guid: c7707cee7f9defd4494b3c93d4a83285, type: 3}

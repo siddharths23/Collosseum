@@ -37,7 +37,6 @@ namespace KinematicCharacterController.Examples
         public LayerMask ObstructionLayers = -1;
         public float ObstructionSharpness = 10000f;
         public List<Collider> IgnoredColliders = new List<Collider>();
-
         public Transform Transform { get; private set; }
         public Transform FollowTransform { get; private set; }
 

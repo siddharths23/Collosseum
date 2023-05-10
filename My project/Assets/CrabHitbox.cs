@@ -14,7 +14,7 @@ public class CrabHitbox : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider collision) {
-        StartCoroutine(hitboxManager.gotHit());
+        StartCoroutine(hitboxManager.invincibleForSeconds(1f));
     }
 
 }

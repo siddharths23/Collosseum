@@ -6,6 +6,10 @@ using Mirror;
 public class PlayerAnimationController : NetworkBehaviour
 {
     public NetworkAnimator animator;
+
+    public HitboxManager hitboxs;
+    public bool canRoll;
+
     public string[] attackNames;
     public WeaponHitManager weapons;
     //attack Rate and nextAttackTime logic is from brackeys melee combat tutorial
@@ -19,7 +23,7 @@ public class PlayerAnimationController : NetworkBehaviour
         {            
             //set the trigger to a random attack
             animator.SetTrigger(attackNames[Random.Range(0 , attackNames.Length)]);
-            
+
             //then enable the hitboxs
             weapons.enableWeaponHitBox();
             
@@ -27,6 +31,11 @@ public class PlayerAnimationController : NetworkBehaviour
 
             //then disable the hitboxs after half a second
             StartCoroutine(disableHitBoxs(0.5f));
+        }
+
+        if (canRoll && isLocalPlayer && Input.GetKey(KeyCode.Space)) {
+            animator.SetTrigger("Rolling");
+            StartCoroutine(hitboxs.invincibleForSeconds(0.5f));
         }
     }
 

@@ -779,6 +779,7 @@ GameObject:
   - component: {fileID: 7883676820654365627}
   - component: {fileID: 3617152943172172970}
   - component: {fileID: 7277832697647499959}
+  - component: {fileID: 6005345529633223268}
   m_Layer: 11
   m_Name: SkeletonWarrior
   m_TagString: Untagged
@@ -973,6 +974,8 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   animator: {fileID: 2091368729944898205}
+  hitboxs: {fileID: 6005345529633223268}
+  canRoll: 1
   attackNames:
   - Attack_1
   - Attack_2
@@ -996,6 +999,23 @@ MonoBehaviour:
   syncInterval: 0
   speed: 600
   animator: {fileID: 4775132917268273210}
+--- !u!114 &6005345529633223268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2301148570075617530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab8a1c18aee20e4e8390e3aa603d624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  hitboxs:
+  - {fileID: 2091368729944898204}
 --- !u!1 &2455081834859682322
 GameObject:
   m_ObjectHideFlags: 0

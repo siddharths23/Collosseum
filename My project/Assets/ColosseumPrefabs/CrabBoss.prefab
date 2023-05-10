@@ -5234,6 +5234,8 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   animator: {fileID: -6816319055809356488}
+  hitboxs: {fileID: 3417314773809822229}
+  canRoll: 0
   attackNames:
   - Attack_1
   - Attack_2

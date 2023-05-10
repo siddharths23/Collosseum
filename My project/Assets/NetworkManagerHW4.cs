@@ -1,5 +1,6 @@
 using UnityEngine;
 using Mirror;
+using System.Collections;
 using System.Collections.Generic;
 
 /*
@@ -20,6 +21,8 @@ public class NetworkManagerHW4 : NetworkManager
     
     private Dictionary<string, int> playerHealth = new Dictionary<string, int>();
     private Dictionary<string, PlayerManagement> playerBar = new Dictionary<string, PlayerManagement>();
+    private List<string> alive = new List<string>();
+    private List<string> playerList = new List<string>();
 
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
@@ -31,22 +34,22 @@ public class NetworkManagerHW4 : NetworkManager
         Transform start;
         GameObject playerPrefab;
 
-        if (numPlayers == 3)
+        if (numPlayers == 0)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
             start = bossSpawn;
         }
-        else if (numPlayers == 2)
+        else if (numPlayers == 1)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
             start = playerSpawn;
         }
-        else if (numPlayers == 0)
+        else if (numPlayers == 2)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "mage_Simple");
             start = mageSpawn;
         }
-        else if (numPlayers == 1)
+        else if (numPlayers == 3)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarrior");
             start = shieldSpawn;
@@ -63,9 +66,9 @@ public class NetworkManagerHW4 : NetworkManager
         //Should instantiate health a different way
         playerHealth[player.name] = 100;
         playerBar[player.name] = player.GetComponent<PlayerManagement>();
-        // playerBar[name].health = 99;
-
-
+        
+        alive.Add(player.name);
+        playerList.Add(player.name);
     }
 
     public override void OnServerDisconnect(NetworkConnectionToClient conn)
@@ -85,6 +88,22 @@ public class NetworkManagerHW4 : NetworkManager
 
         if (playerHealth[name] < 1) {
             playerBar[name].isDead = true;
+            alive.Remove(name);
+
+            if (alive.Count == 1) 
+            {                
+                Debug.Log("Player " + alive[0] + " wins.");
+
+                StartCoroutine(despawnPlayersAfterSeconds(4f));
+            }
+        }
+    }
+
+    IEnumerator despawnPlayersAfterSeconds(float time) {
+        yield return new WaitForSeconds(time);
+        foreach (string player in playerList) {
+            GameObject loser = GameObject.Find(player);
+            Destroy(loser);
         }
     }
 
