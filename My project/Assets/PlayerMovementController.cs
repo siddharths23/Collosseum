@@ -18,13 +18,14 @@ public class PlayerMovementController : NetworkBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (isLocalPlayer) {
+        if (isLocalPlayer)
+        {
             myRigidBody.velocity = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")) * speed * Time.fixedDeltaTime;
             animator.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody>().velocity.magnitude));
 
             float xRot = Input.GetAxisRaw("Mouse X");
             // float yRot = Input.GetAxisRaw("Mouse Y");
-            
+
             Vector3 rotVector = new Vector3(0f, xRot, 0f);
 
             Quaternion deltaRot = Quaternion.Euler(rotSpeed * rotVector * Time.fixedDeltaTime);
