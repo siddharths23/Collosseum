@@ -20,7 +20,8 @@ public class PlayerMovementController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            myRigidBody.velocity = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")) * speed * Time.fixedDeltaTime;
+            Vector3 move = myRigidBody.rotation * (new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")) * speed * Time.fixedDeltaTime);
+            myRigidBody.velocity = move;
             animator.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody>().velocity.magnitude));
 
             float xRot = Input.GetAxisRaw("Mouse X");

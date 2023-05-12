@@ -22,15 +22,12 @@ public class PlayerAnimationController : NetworkBehaviour
         if (isLocalPlayer && Input.GetMouseButtonDown(0) && Time.time >= nextAttackTime)
         {            
             //set the trigger to a random attack
-            animator.SetTrigger(attackNames[Random.Range(0 , attackNames.Length)]);
-
-            //then enable the hitboxs
-            weapons.enableWeaponHitBox();
+            animator.SetTrigger(attackNames[Random.Range(0 , attackNames.Length)]);            
             
             nextAttackTime = Time.time + 1f / attackRate;
 
-            //then disable the hitboxs after half a second
-            StartCoroutine(disableHitBoxs(0.5f));
+            //then enable and disable the hitboxs after certain times
+            StartCoroutine(attack(0.25f, 0.5f));
         }
 
         if (canRoll && isLocalPlayer && Input.GetKey(KeyCode.Space)) {
@@ -39,15 +36,18 @@ public class PlayerAnimationController : NetworkBehaviour
         }
     }
 
-    IEnumerator disableHitBoxs(float time)
+    IEnumerator attack(float enableTime, float disableTime)
     {
-        yield return new WaitForSeconds(time);
- 
+        yield return new WaitForSeconds(enableTime);
+        weapons.enableWeaponHitBox();
+
+        yield return new WaitForSeconds(disableTime);
         weapons.disableWeaponHitBox();
     }
 
     public void Die()
     {
         animator.SetTrigger("Dead");
+        hitboxs.disableHitboxs();
     }
 }

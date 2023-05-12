@@ -15,7 +15,7 @@ public class HitboxManager : NetworkBehaviour
         // return;
     }
 
-    void disableHitboxs()
+    public void disableHitboxs()
     {
         foreach (Collider hitbox in hitboxs)
         {
