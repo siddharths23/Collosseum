@@ -7,8 +7,10 @@ public class PlayerMovementController : NetworkBehaviour
 {
     public float speed = 30;
     public float rotSpeed = 60;
+    public float rollForce = 10000;
     Rigidbody myRigidBody;
     public Animator animator;
+    
 
     void Start()
     {
@@ -33,4 +35,8 @@ public class PlayerMovementController : NetworkBehaviour
             myRigidBody.MoveRotation(myRigidBody.rotation * deltaRot);
         }
     }
+    
+    // public void roll() {
+    //     myRigidBody.velocity += (myRigidBody.rotation * (new Vector3(1,0,1)) * rollForce);
+    // }
 }

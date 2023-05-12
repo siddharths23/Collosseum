@@ -34,12 +34,12 @@ public class NetworkManagerHW4 : NetworkManager
         Transform start;
         GameObject playerPrefab;
 
-        if (numPlayers == 0)
+        if (numPlayers == 1)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
             start = bossSpawn;
         }
-        else if (numPlayers == 1)
+        else if (numPlayers == 0)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
             start = playerSpawn;
@@ -105,6 +105,47 @@ public class NetworkManagerHW4 : NetworkManager
             GameObject loser = GameObject.Find(player);
             Destroy(loser);
         }
+    }
+
+    public void join(NetworkConnectionToClient conn, int character) {
+        Transform start;
+        GameObject playerPrefab;
+
+        if (character == 0)
+        {
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
+            start = bossSpawn;
+        }
+        else if (character == 1)
+        {
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
+            start = playerSpawn;
+        }
+        else if (character == 2)
+        {
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "mage_Simple");
+            start = mageSpawn;
+        }
+        else if (character == 3)
+        {
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarrior");
+            start = shieldSpawn;
+        }
+        else 
+        {
+            playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
+            start = bossSpawn;
+        }
+
+
+        GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
+        NetworkServer.AddPlayerForConnection(conn, player);
+        //Should instantiate health a different way
+        playerHealth[player.name] = 100;
+        playerBar[player.name] = player.GetComponent<PlayerManagement>();
+        
+        alive.Add(player.name);
+        playerList.Add(player.name);
     }
 
 }

@@ -41,7 +41,7 @@ namespace Mirror
                     NetworkClient.Ready();
                     if (NetworkClient.localPlayer == null)
                     {
-                        NetworkClient.AddPlayer();
+                        NetworkClient.AddPlayer();                        
                     }
                 }
             }
@@ -58,7 +58,7 @@ namespace Mirror
                 // Server + Client
                 if (Application.platform != RuntimePlatform.WebGLPlayer)
                 {
-                    if (GUILayout.Button("Host (Server + Client)"))
+                    if (GUILayout.Button("Host Game"))
                     {
                         Debug.Log("Started Server");
                         manager.StartHost();
@@ -67,7 +67,7 @@ namespace Mirror
 
                 // Client + IP
                 GUILayout.BeginHorizontal();
-                if (GUILayout.Button("Client"))
+                if (GUILayout.Button("Join Game"))
                 {
                     manager.StartClient();
                 }

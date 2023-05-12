@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class Billboard : MonoBehaviour
 {
+    
     public Transform cam;
 
     void Start()
     {
-        cam = GameObject.Find("Main Camera").transform;
+        int i;
+        for(i = 0; i < 10 ; i++) {
+            if (this.transform.root.GetChild(i).name == "CameraHolder"){
+                break;
+            }
+        }
+        cam = this.transform.root.GetChild(i);
     }
 
     // Update is called once per frame
