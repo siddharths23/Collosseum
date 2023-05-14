@@ -18,6 +18,8 @@ public class NetworkManagerHW4 : NetworkManager
     public Transform playerSpawn;
     public Transform mageSpawn;
     public Transform shieldSpawn;
+
+    public UIManager uiManager;
     
     private Dictionary<string, int> playerHealth = new Dictionary<string, int>();
     private Dictionary<string, PlayerManagement> playerBar = new Dictionary<string, PlayerManagement>();
@@ -34,12 +36,12 @@ public class NetworkManagerHW4 : NetworkManager
         Transform start;
         GameObject playerPrefab;
 
-        if (numPlayers == 1)
+        if (numPlayers == 0)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
             start = bossSpawn;
         }
-        else if (numPlayers == 0)
+        else if (numPlayers == 1)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
             start = playerSpawn;
@@ -90,11 +92,15 @@ public class NetworkManagerHW4 : NetworkManager
             playerBar[name].isDead = true;
             alive.Remove(name);
 
+            StartCoroutine(uiManager.ShowMessageForSeconds("Player " + name + " has been eliminated!", 4f));
+
             if (alive.Count == 1) 
             {                
                 Debug.Log("Player " + alive[0] + " wins.");
 
-                StartCoroutine(despawnPlayersAfterSeconds(4f));
+                StartCoroutine(WaitAndShowWinnerMessage(5f, "Player " + alive[0] + " wins!"));
+
+                StartCoroutine(despawnPlayersAfterSeconds(6f));
             }
         }
     }
@@ -105,6 +111,12 @@ public class NetworkManagerHW4 : NetworkManager
             GameObject loser = GameObject.Find(player);
             Destroy(loser);
         }
+    }
+
+    IEnumerator WaitAndShowWinnerMessage(float waitTime, string message)
+    {
+        yield return new WaitForSeconds(waitTime);
+        StartCoroutine(uiManager.ShowMessageForSeconds(message, 5f));
     }
 
     public void join(NetworkConnectionToClient conn, int character) {
