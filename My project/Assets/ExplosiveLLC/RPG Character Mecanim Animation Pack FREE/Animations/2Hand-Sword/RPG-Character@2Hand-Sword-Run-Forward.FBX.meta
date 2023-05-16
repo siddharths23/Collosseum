@@ -758,7 +758,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.31881815
+        functionName: PlaySound
+        data: event:/SFX_Swordsman/SFX_Swordman_Footsteps
+        objectReferenceParameter: {fileID: 945623917936182628, guid: bf0523f3870e5f24b9ea3461b05ccb80, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.70381814
+        functionName: PlaySound
+        data: event:/SFX_Swordsman/SFX_Swordman_Footsteps
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {fileID: 101100000, guid: 4ebc95c8618479f4d8251c7dafa10029, type: 2}

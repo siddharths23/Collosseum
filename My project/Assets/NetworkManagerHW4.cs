@@ -36,12 +36,12 @@ public class NetworkManagerHW4 : NetworkManager
         Transform start;
         GameObject playerPrefab;
 
-        if (numPlayers == 0)
+        if (numPlayers == 1)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
             start = bossSpawn;
         }
-        else if (numPlayers == 1)
+        else if (numPlayers == 0)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
             start = playerSpawn;

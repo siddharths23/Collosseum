@@ -1,5 +1,313 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9156960590697116100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Swordsman/SFX_Swordman_Impact
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Swordsman/SFX_Swordman_Impact
+  Guid:
+    Data1: 1086986596
+    Data2: 1225251416
+    Data3: 367044783
+    Data4: 43506323
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8994300125969647463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Mage/SFX_Mage_hover
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Mage/SFX_Mage_hover
+  Guid:
+    Data1: -1290843126
+    Data2: 1083996457
+    Data3: 2144804256
+    Data4: 1669888385
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8867240205761640295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Crab/SFX_Crab_DmgTaken
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Crab/SFX_Crab_DmgTaken
+  Guid:
+    Data1: 888625812
+    Data2: 1094881571
+    Data3: -1484207221
+    Data4: -1607354323
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8784837870319887296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Swordsman/SFX_Swordman_roll
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Swordsman/SFX_Swordman_roll
+  Guid:
+    Data1: -835290070
+    Data2: 1199035139
+    Data3: 1598897833
+    Data4: 1366006735
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4299247956831929763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Heavy/SFX_Heavy_Bash
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Heavy/SFX_Heavy_Bash
+  Guid:
+    Data1: -1990264723
+    Data2: 1140663990
+    Data3: -47378498
+    Data4: 1232084964
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4047894312545254621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Mage/SFX_Mage_Sparks
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Mage/SFX_Mage_Sparks
+  Guid:
+    Data1: -1980033232
+    Data2: 1275370777
+    Data3: 1420138632
+    Data4: -1598811519
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3567885193005281524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Audio/GeneratedSoundBanks/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638197710341531860
+  FileSizes:
+  - Name: 
+    Value: 1728
+  Exists: 1
+--- !u!114 &-2601899918938555727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Crab/SFX_Crab_miss
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Crab/SFX_Crab_miss
+  Guid:
+    Data1: -1145339218
+    Data2: 1269954926
+    Data3: 484423812
+    Data4: -347776197
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2195630056490673110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Audio/GeneratedSoundBanks/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638197710257561279
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2052315677339573557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_UI/CLM_SFX_UI_CharacterSelect
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_UI/CLM_SFX_UI_CharacterSelect
+  Guid:
+    Data1: -1501452288
+    Data2: 1094507836
+    Data3: -412242756
+    Data4: -1967079804
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1705309059823538795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Heavy/SFX_Heavy_Miss
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Heavy/SFX_Heavy_Miss
+  Guid:
+    Data1: -1742972953
+    Data2: 1250786308
+    Data3: -1714408303
+    Data4: 1483058492
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1438791381396752185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Heavy/SFX_Heavy_Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Heavy/SFX_Heavy_Attack
+  Guid:
+    Data1: -452793308
+    Data2: 1299211207
+    Data3: -1868644674
+    Data4: 425187424
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1083685339071053656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,17 +348,119 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 1601508730601907352}
-  - {fileID: 2570178363203402412}
+  - {fileID: -3567885193005281524}
+  - {fileID: -2195630056490673110}
   EditorEvents:
-  - {fileID: -1083685339071053656}
+  - {fileID: -2052315677339573557}
+  - {fileID: -8994300125969647463}
+  - {fileID: -1438791381396752185}
+  - {fileID: -8784837870319887296}
+  - {fileID: -4047894312545254621}
+  - {fileID: 3975623063272381691}
+  - {fileID: 2604475882165983606}
+  - {fileID: 1000917219286868928}
+  - {fileID: -9156960590697116100}
+  - {fileID: -4299247956831929763}
+  - {fileID: 8498362109640116058}
+  - {fileID: 6483854344622731653}
+  - {fileID: 4911430119854117020}
+  - {fileID: -8867240205761640295}
+  - {fileID: 8106900751039056170}
+  - {fileID: 1371815278172613761}
+  - {fileID: 3853257284893995855}
+  - {fileID: -2601899918938555727}
+  - {fileID: 231748361273463399}
+  - {fileID: 7018535613362240028}
+  - {fileID: -1705309059823538795}
+  - {fileID: 5092970816360920192}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2570178363203402412}
+  - {fileID: -2195630056490673110}
   StringsBanks:
-  - {fileID: 1601508730601907352}
-  cacheTime: 638195101891757125
+  - {fileID: -3567885193005281524}
+  cacheTime: 638197710341531860
   cacheVersion: 131601
+--- !u!114 &231748361273463399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Swordsman/SFX_Swordman_DamageTake
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Swordsman/SFX_Swordman_DamageTake
+  Guid:
+    Data1: 1161895855
+    Data2: 1135336410
+    Data3: 1066440596
+    Data4: -1791505789
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1000917219286868928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Mage/SFX_FireBlast
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Mage/SFX_FireBlast
+  Guid:
+    Data1: -1776297923
+    Data2: 1090765900
+    Data3: 1371502736
+    Data4: 1452316111
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1371815278172613761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Crab/SFX_Crab_Impact
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Crab/SFX_Crab_Impact
+  Guid:
+    Data1: -192669033
+    Data2: 1090511330
+    Data3: 308234159
+    Data4: -1467443565
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1601508730601907352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,3 +499,246 @@ MonoBehaviour:
   lastModified: 638195101891717055
   FileSizes: []
   Exists: 1
+--- !u!114 &2604475882165983606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Heavy/SFX_Heavy_Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Heavy/SFX_Heavy_Footsteps
+  Guid:
+    Data1: -2127930563
+    Data2: 1284782257
+    Data3: -430458712
+    Data4: -175638322
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3853257284893995855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Mage/SFX_Mage_bonk
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Mage/SFX_Mage_bonk
+  Guid:
+    Data1: -14178903
+    Data2: 1088908802
+    Data3: 1606440586
+    Data4: 480518162
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3975623063272381691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_UI/CLM_SFX_UI_CLICK
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_UI/CLM_SFX_UI_CLICK
+  Guid:
+    Data1: 1477582133
+    Data2: 1323974905
+    Data3: 1199203735
+    Data4: 110254543
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4911430119854117020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Swordsman/SFX_Swordman_Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Swordsman/SFX_Swordman_Footsteps
+  Guid:
+    Data1: 920594830
+    Data2: 1279871877
+    Data3: -1283058302
+    Data4: 1406925780
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5092970816360920192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Heavy/SFX_Heavy_Roll
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Heavy/SFX_Heavy_Roll
+  Guid:
+    Data1: -1983870991
+    Data2: 1093266984
+    Data3: -799339892
+    Data4: 929698904
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6483854344622731653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Swordsman/SFX_Swordman_Miss
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Swordsman/SFX_Swordman_Miss
+  Guid:
+    Data1: -1822190197
+    Data2: 1199446345
+    Data3: 1544291215
+    Data4: -225481853
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7018535613362240028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Crab/SFX_Crab_Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Crab/SFX_Crab_Footsteps
+  Guid:
+    Data1: 1585389511
+    Data2: 1333918696
+    Data3: 690978482
+    Data4: -865288247
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8106900751039056170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Mage/SFX_Mage_DamageTaken
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Mage/SFX_Mage_DamageTaken
+  Guid:
+    Data1: 1616551318
+    Data2: 1122995545
+    Data3: -408646472
+    Data4: 253251279
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8498362109640116058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_UI/CLM_SFX_UI_SCROLL
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_UI/CLM_SFX_UI_SCROLL
+  Guid:
+    Data1: -521856121
+    Data2: 1265072035
+    Data3: -853671263
+    Data4: 1619133054
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

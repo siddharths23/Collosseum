@@ -5185,6 +5185,7 @@ GameObject:
   - component: {fileID: 3733968022573363092}
   - component: {fileID: 2765755276186721725}
   - component: {fileID: 3229569836586388105}
+  - component: {fileID: 8167525858651582663}
   m_Layer: 0
   m_Name: CrabBoss
   m_TagString: Untagged
@@ -5398,6 +5399,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   animator: {fileID: -6816319055809356488}
+  movementController: {fileID: 0}
   hitboxs: {fileID: 3417314773809822229}
   canRoll: 0
   attackNames:
@@ -5408,6 +5410,7 @@ MonoBehaviour:
   - Attack_5
   weapons: {fileID: 3733968022573363092}
   attackRate: 1
+  rollRate: 1
 --- !u!114 &3733968022573363092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5446,6 +5449,7 @@ MonoBehaviour:
   syncInterval: 0
   speed: 600
   rotSpeed: 60
+  rollForce: 10000
   animator: {fileID: 2330797971957879887}
 --- !u!114 &3229569836586388105
 MonoBehaviour:
@@ -5464,6 +5468,18 @@ MonoBehaviour:
   syncInterval: 0
   CameraHolder: {fileID: 6146712028100894711}
   offset: {x: 0, y: 3, z: -10}
+--- !u!114 &8167525858651582663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374688962146441844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75603d5c61acfe42ac7b1adb499f1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6987389631274617620
 GameObject:
   m_ObjectHideFlags: 0
