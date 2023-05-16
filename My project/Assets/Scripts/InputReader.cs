@@ -18,13 +18,13 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 
     void Start()
     {
-        controls = new Controls(); 
+        controls = new Controls();
         controls.Player.SetCallbacks(this);
 
         controls.Player.Enable();
     }
 
-    private void OnDestroy() 
+    private void OnDestroy()
     {
         controls.Player.Disable();
     }
@@ -32,14 +32,14 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (!context.performed) { return; } 
+        if (!context.performed) { return; }
 
         JumpEvent?.Invoke();
     }
 
     public void OnDodge(InputAction.CallbackContext context)
     {
-        if (!context.performed) { return; } 
+        if (!context.performed) { return; }
 
         DodgeEvent?.Invoke();
     }
@@ -51,9 +51,9 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 
     public void OnLook(InputAction.CallbackContext context)
     {
-        
+
     }
 
 
-  
+
 }

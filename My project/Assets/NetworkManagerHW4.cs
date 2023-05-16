@@ -36,12 +36,12 @@ public class NetworkManagerHW4 : NetworkManager
         Transform start;
         GameObject playerPrefab;
 
-        if (numPlayers == 1)
+        if (numPlayers == 0)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "CrabBoss");
             start = bossSpawn;
         }
-        else if (numPlayers == 0)
+        else if (numPlayers == 1)
         {
             playerPrefab = spawnPrefabs.Find(prefab => prefab.name == "SkeletonWarriorTwoHandedWeaponSimple");
             start = playerSpawn;
@@ -71,6 +71,7 @@ public class NetworkManagerHW4 : NetworkManager
         
         alive.Add(player.name);
         playerList.Add(player.name);
+        StartCoroutine(uiManager.ShowMessageForSeconds( " " + player.name + " has been joined the battle!", 4f));
     }
 
     public override void OnServerDisconnect(NetworkConnectionToClient conn)
