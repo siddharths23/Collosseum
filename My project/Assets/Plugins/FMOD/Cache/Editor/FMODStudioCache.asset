@@ -41,10 +41,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX_Mage/SFX_Mage_hover
   Guid:
-    Data1: -1290843126
-    Data2: 1083996457
-    Data3: 2144804256
-    Data4: 1669888385
+    Data1: 69119876
+    Data2: 1187846341
+    Data3: 1561117850
+    Data4: -1445005454
   Banks:
   - {fileID: -2195630056490673110}
   IsStream: 1
@@ -53,7 +53,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 57610
 --- !u!114 &-8867240205761640295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,10 +177,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Audio/GeneratedSoundBanks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638197710341531860
+  lastModified: 638204552309303704
   FileSizes:
   - Name: 
-    Value: 1728
+    Value: 1892
   Exists: 1
 --- !u!114 &-2601899918938555727
 MonoBehaviour:
@@ -224,7 +224,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Audio/GeneratedSoundBanks/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638197710257561279
+  lastModified: 638204552214753699
   FileSizes: []
   Exists: 1
 --- !u!114 &-2052315677339573557
@@ -373,12 +373,15 @@ MonoBehaviour:
   - {fileID: 7018535613362240028}
   - {fileID: -1705309059823538795}
   - {fileID: 5092970816360920192}
+  - {fileID: 8144220282060355886}
+  - {fileID: 379747472796301685}
+  - {fileID: 4183900236845588718}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2195630056490673110}
   StringsBanks:
   - {fileID: -3567885193005281524}
-  cacheTime: 638197710341531860
+  cacheTime: 638204552309303704
   cacheVersion: 131601
 --- !u!114 &231748361273463399
 MonoBehaviour:
@@ -407,6 +410,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &379747472796301685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/CLM_Music_CombatLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/CLM_Music_CombatLvl1
+  Guid:
+    Data1: -2027106964
+    Data2: 1189519166
+    Data3: -1600830540
+    Data4: 1891455420
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 469760
 --- !u!114 &1000917219286868928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,7 +486,7 @@ MonoBehaviour:
   - {fileID: -2195630056490673110}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -580,6 +610,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4183900236845588718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/CLM_Music_mainMenu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/CLM_Music_mainMenu
+  Guid:
+    Data1: 523131764
+    Data2: 1224504740
+    Data3: 1022726020
+    Data4: -981134900
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42666
 --- !u!114 &4911430119854117020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,6 +772,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8144220282060355886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/CLM_Music_DefeatStinger
+  m_EditorClassIdentifier: 
+  Path: event:/Music/CLM_Music_DefeatStinger
+  Guid:
+    Data1: -1112167089
+    Data2: 1267958323
+    Data3: -1918501718
+    Data4: -206112839
+  Banks:
+  - {fileID: -2195630056490673110}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15817
 --- !u!114 &8498362109640116058
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 818665584}
   - component: {fileID: 818665583}
   - component: {fileID: 818665585}
+  - component: {fileID: 818665586}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -404,8 +405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetX: 0
-  offsetY: 0
 --- !u!114 &818665585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,6 +420,18 @@ MonoBehaviour:
   serverSelection: {fileID: 0}
   addressinput: {fileID: 0}
   characterSelection: {fileID: 0}
+--- !u!114 &818665586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818665579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75603d5c61acfe42ac7b1adb499f1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &820714763
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,8 +497,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -857,16 +868,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
+  CollisionTag: Collide
   EventReference:
     Guid:
-      Data1: -1281567317
-      Data2: 1097831397
-      Data3: 718653328
-      Data4: -1828429913
-    Path: event:/CLM_SFX_Magic_Blast
+      Data1: -2027106964
+      Data2: 1189519166
+      Data3: -1600830540
+      Data4: 1891455420
+    Path: event:/Music/CLM_Music_CombatLvl1
   Event: 
-  PlayEvent: 15
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
